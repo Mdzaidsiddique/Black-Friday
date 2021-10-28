@@ -1,5 +1,6 @@
 # Black-Friday
-In this repository, I have done Exploratory Data Analysis and feature engineering for Black Friday Dataset.
+In this repository, I have done Exploratory Data Analysis and feature engineering for Black Friday Dataset by using
+### Pandas, Matplotlib and Seaborn.
 
 ### importing the dataset
 import pandas as pd
