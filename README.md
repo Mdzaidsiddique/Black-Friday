@@ -38,7 +38,16 @@ black_friday.drop('User_ID',axis=1).hist(figsize = (13,10), color = 'darkgreen')
 plt.tight_layout()
 plt.show()
 
+![image](https://user-images.githubusercontent.com/87862008/139221458-fc7aac7e-3883-465f-a409-45718503db99.png)
 
+
+## Correlation matrix of features in the dataset
+
+plt.figure(figsize=(10,6))
+sns.heatmap(black_friday.corr(), annot = True, cmap='coolwarm',linewidths=1)
+plt.show()
+
+iMAGE
 
 black_friday.Product_Category_2.fillna(0, inplace = True)
 black_friday.Product_Category_3.fillna(0, inplace = True)
