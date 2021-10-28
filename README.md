@@ -1,12 +1,14 @@
 # Black-Friday
-In this repository, I have done Exploratory Data Analysis for Black Friday Dataset and try to identify relationship between a Purchase Price and other various features
+In this repository, I have done Exploratory Data Analysis and feature engineering for Black Friday Dataset.
 
+### importing the dataset
 import pandas as pd
 black_friday = pd.read_csv('C:/Users/masoo/Downloads/black friday - Copy.csv')
 black_friday.head()
 
 ![image](https://user-images.githubusercontent.com/87862008/139216761-ec5d9f30-f1a0-4b29-a3d1-afd3742543ce.png)
 
+### number of rows and columns 
 black_friday.shape
 #### Number of rows in dataset:  537577
 #### Number of columns in dataset:  12
@@ -15,7 +17,7 @@ black_friday.columns
        'Stay_In_Current_City_Years', 'Marital_Status', 'Product_Category_1',
        'Product_Category_2', 'Product_Category_3']
        
-##checking null values
+### checking null values
 
 black_friday.isnull().sum()
 black_friday.isnull().sum().mean()*100
@@ -29,7 +31,9 @@ plt.show()
 
 ![image](https://user-images.githubusercontent.com/87862008/139220278-2dc99309-e486-4800-8619-638b36b986e5.png)
 
-Most of the values in column Product_Category_2 and Product_Category_3 are missing
+### Most of the values in column Product_Category_2 and Product_Category_3 are missing 
+### The 'User_ID' column is of no use in describing the dataset and we dont need product category 3 column becouse 70 % data is missing, so that i am going to remove 'User_ID' and 'Product_Category_3' column.
+black_friday.drop('Product_Category_3',axis = 1, inplace = True)
 
 Histogram of features in the dataset
 
@@ -49,13 +53,11 @@ plt.show()
 
 ![image](https://user-images.githubusercontent.com/87862008/139222806-6973d7a1-a6de-47a0-bc37-80df946cb64c.png)
 
-
+### fill null value
 black_friday.Product_Category_2.fillna(0, inplace = True)
 black_friday.Product_Category_3.fillna(0, inplace = True)
-### we dont need product category 3 column becouse 70 % data is missing, so i am going to drop product category 3
-black_friday.drop('Product_Category_3',axis = 1, inplace = True)
 
-
+### check unique values 
 black_friday.Gender.unique()
 black_friday.Gender.value_counts()
 black_friday.Age.value_counts()
