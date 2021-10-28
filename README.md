@@ -47,7 +47,8 @@ plt.figure(figsize=(10,6))
 sns.heatmap(black_friday.corr(), annot = True, cmap='coolwarm',linewidths=1)
 plt.show()
 
-iMAGE
+![image](https://user-images.githubusercontent.com/87862008/139222806-6973d7a1-a6de-47a0-bc37-80df946cb64c.png)
+
 
 black_friday.Product_Category_2.fillna(0, inplace = True)
 black_friday.Product_Category_3.fillna(0, inplace = True)
