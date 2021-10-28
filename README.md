@@ -29,6 +29,16 @@ plt.show()
 
 ![image](https://user-images.githubusercontent.com/87862008/139220278-2dc99309-e486-4800-8619-638b36b986e5.png)
 
+Most of the values in column Product_Category_2 and Product_Category_3 are missing
+
+Histogram of features in the dataset
+
+sns.set_style('whitegrid')
+black_friday.drop('User_ID',axis=1).hist(figsize = (13,10), color = 'darkgreen')
+plt.tight_layout()
+plt.show()
+
+
 
 black_friday.Product_Category_2.fillna(0, inplace = True)
 black_friday.Product_Category_3.fillna(0, inplace = True)
