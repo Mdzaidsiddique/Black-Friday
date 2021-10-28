@@ -1,13 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Oct 22 16:20:44 2021
-
-@author: masoo
-"""
-
-'''
 Exploratory Data Analysis of black friday data set
-'''
 import pandas as pd
 black_friday = pd.read_csv('C:/Users/masoo/Downloads/black friday - Copy.csv')
 black_friday.head()
@@ -50,4 +41,3 @@ black_friday.Product_Category_1.isnull().sum()
 black_friday.Product_Category_1.value_counts()
 black_friday.Product_Category_1.nunique()
 
-#end of eda
