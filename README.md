@@ -27,6 +27,7 @@ sns.heatmap(black_friday.isnull(), yticklabels=False, cbar = False, cmap = 'viri
 plt.title('Null Values present in the dataset',fontsize=14)
 plt.show()
 
+![image](https://user-images.githubusercontent.com/87862008/139220278-2dc99309-e486-4800-8619-638b36b986e5.png)
 
 
 black_friday.Product_Category_2.fillna(0, inplace = True)
