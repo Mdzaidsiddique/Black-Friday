@@ -15,7 +15,6 @@ black_friday.head()
 
 ![image](https://user-images.githubusercontent.com/87862008/139216761-ec5d9f30-f1a0-4b29-a3d1-afd3742543ce.png)
 
-
 ### number of rows and columns 
 
 black_friday.shape
